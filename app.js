@@ -18,19 +18,21 @@ const horseAudio = document.getElementById('horse-audio');
 let timesDogSoundHasBeenPlayed = 0;
 dogImage.addEventListener('click', () => {
     timesDogSoundHasBeenPlayed++;
-    console.log(timesDogSoundHasBeenPlayed);
+    document.getElementById('dog-count').innerHTML = `The dog sound has been played ${timesDogSoundHasBeenPlayed} times.`;
     dogAudio.play();
 });
 
 let timesCatSoundHasBeenPlayed = 0;
 catImage.addEventListener('click', () => {
     timesCatSoundHasBeenPlayed++;
+    document.getElementById('cat-count').innerHTML = `The cat sound has been played ${timesCatSoundHasBeenPlayed} times.`;
     catAudio.play();
 });
 
 let timesHorseSoundHasBeenPlayed = 0;
 horseImage.addEventListener('click', () => {
     timesHorseSoundHasBeenPlayed++;
+    document.getElementById('horse-count').innerHTML = `The horse sound has been played ${timesHorseSoundHasBeenPlayed} times.`;
     horseAudio.play();
 });
 
