@@ -1,5 +1,5 @@
 
-body {        
+body {
     font-family: 'Titillium Web', sans-serif;
     background-color: #FFFCFA;
     display: grid;
@@ -33,3 +33,17 @@ footer {
     background-color: #FAF0EA;
     padding: 10px;
 }
+
+img {
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
