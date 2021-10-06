@@ -19,6 +19,7 @@ let timesDogSoundHasBeenPlayed = 0;
 dogImage.addEventListener('click', () => {
     timesDogSoundHasBeenPlayed++;
     document.getElementById('dog-count').innerHTML = `The dog sound has been played ${timesDogSoundHasBeenPlayed} times.`;
+    dogImage.classList.add('animate');
     dogAudio.play();
 });
 
@@ -26,6 +27,7 @@ let timesCatSoundHasBeenPlayed = 0;
 catImage.addEventListener('click', () => {
     timesCatSoundHasBeenPlayed++;
     document.getElementById('cat-count').innerHTML = `The cat sound has been played ${timesCatSoundHasBeenPlayed} times.`;
+    catImage.classList.add('animate');
     catAudio.play();
 });
 
@@ -33,6 +35,7 @@ let timesHorseSoundHasBeenPlayed = 0;
 horseImage.addEventListener('click', () => {
     timesHorseSoundHasBeenPlayed++;
     document.getElementById('horse-count').innerHTML = `The horse sound has been played ${timesHorseSoundHasBeenPlayed} times.`;
+    horseImage.classList.add('animate');
     horseAudio.play();
 });
 
